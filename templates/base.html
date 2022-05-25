@@ -11,23 +11,17 @@
     {% endblock %}
 
     {% block css %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-
-      {% endblock %}
-
-
-    {% block extracss %}
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static 'css/base.css' %}">
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block js %}
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/fb3ce16b7a.js" crossorigin="anonymous"></script>
       <script src="https://js.stripe.com/v3/"></script>
-      {% endblock %}
+    {% endblock %}
 
     <title>Klarart {% block title %}{% endblock %}</title>
   </head>
@@ -88,11 +82,11 @@
                       {% endif %}           
                   </div>
             </ul>
-            <form method="GET" action="{% url 'products' %}" class="form-inline my-2 my-lg-0">
+            <form method="GET" action="" class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" required type="text" name="q" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-            <a href="{% url 'bag' %}" class="pl-2" type="button" role="button">
+            <a href="" class="pl-2" type="button" role="button">
               {% if total %}
                 £{{total|floatformat:2}}
               {% else %}
@@ -171,26 +165,26 @@
 
   </div>
     {% block extrajs %}
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
-    (function($) 
-    {
-      window.fnames = new Array(); 
-      window.ftypes = new Array();
-      fnames[0]='EMAIL';
-      ftypes[0]='email';
-      fnames[1]='FNAME';
-      ftypes[1]='text';
-      fnames[2]='LNAME';
-      ftypes[2]='text';
-      fnames[3]='ADDRESS';
-      ftypes[3]='address';
-      fnames[4]='PHONE';
-      ftypes[4]='phone';
-      fnames[5]='BIRTHDAY';
-      ftypes[5]='birthday';
-      }
-      (jQuery));var $mcj = jQuery.noConflict(true);</script>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+      <script type='text/javascript'>
+      (function($) 
+      {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+        fnames[1]='FNAME';
+        ftypes[1]='text';
+        fnames[2]='LNAME';
+        ftypes[2]='text';
+        fnames[3]='ADDRESS';
+        ftypes[3]='address';
+        fnames[4]='PHONE';
+        ftypes[4]='phone';
+        fnames[5]='BIRTHDAY';
+        ftypes[5]='birthday';
+        }
+        (jQuery));var $mcj = jQuery.noConflict(true);</script>
     {% endblock %}
   </body>
 
