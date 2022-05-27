@@ -57,3 +57,58 @@ h1, h2, h3, h4, h5, h6,
 .nav-2-title:hover {
     color: black;
 }
+
+/*Home.html ------------------------------------ */
+
+.home-center {
+    width: 60%;
+    margin: auto;
+    padding-top: 18px;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.store-btn {
+    width: 40%;
+    font-weight: bold;
+}
+
+.welcome-msg {
+    font-weight: bold;
+}
+
+.front-img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Footer Bar Styles ----------------------- */
+
+.foot-box {
+    border-top: 1px solid black;
+}
+
+#mc_embed_signup {
+    border: 1px solid black;
+    color: black;
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgb(149, 149, 190);
+}
+
+.mail-img {
+    width: 10%;
+}
+
+label {    
+display: flow-root;
+}
+
+.email {
+    font-weight: bold;
+}
+
+#mc-embedded-subscribe {
+    margin-top: 4px;
+}
